@@ -45,6 +45,7 @@ const Json = () => {
 const Cabezera = () => <header>Bienvenidos</header>
 const App = () =>
 <>
+<Cabezera/>
 <Json/>
 </>
 ReactDOM.render(<App/>, document.getElementById('root'));
