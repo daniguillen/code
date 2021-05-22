@@ -4,7 +4,7 @@ import './index.css';
 
 const Json = () => {
   const [datosapi, setDatosapi] = useState( [] )
-
+//me comunico con la api, pido acceso y lo guardo y lo transformo en Json
           function getDatosapi() {
             fetch('http://api.mediastack.com/v1/news?access_key=49a840cf6d0c43b8fbc0849043c93bd3')
               .then(response => response.json())
@@ -14,7 +14,7 @@ const Json = () => {
           useEffect(() => {
             getDatosapi()
           }, [])
-
+//para poder mostar necesito mapear el json y especificamente en data y poder mostrar los objetos que hay dentro
                 return (
                       <table>
                       <thead>
