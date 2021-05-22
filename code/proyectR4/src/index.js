@@ -27,7 +27,7 @@ const Json = () => {
                       </thead>
                       <tbody>
                         <tr>
-                          <td>  {datosapi.data? datosapi.data.map((dato, index) => {
+                          <td>{datosapi.data? datosapi.data.map((dato, index) => {
                                         return(<ol key={index}>{dato.country}</ol>)}):null}</td>
                           <td>{datosapi.data? datosapi.data.map((dato, index) => {
                                         return(<ol key={index}>{dato.language}</ol>)}):null}</td>
@@ -42,7 +42,7 @@ const Json = () => {
                         )
           }
 
-const Cabezera = () => <header>Bienvenidos</header>
+const Cabezera = () => <header><h1>Bienvenidos</h1></header>
 const App = () =>
 <>
 <Cabezera/>
